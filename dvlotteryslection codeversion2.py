@@ -8,9 +8,9 @@ n=0
 while True:
 
 # Define the target ID
- #target_id = random.sample(x,1)[0]
+ target_id = random.sample(x,1)[0]
  #is you are a couple or tow person, you can uncomment the following line and the if statement code
- target_id1, target_id2 = random.sample(x, 2)
+ #target_id1, target_id2 = random.sample(x, 2)
 
 
 # Sample 50000 random IDs without replacement
@@ -19,9 +19,9 @@ while True:
 
 
 # Check if the target ID is selected
- if target_id1 in selected_ids or target_id2 in selected_ids:
+ #if target_id1 in selected_ids or target_id2 in selected_ids:
 
- #if target_id in selected_ids:
+ if target_id in selected_ids:
      print("Congratulations! you selected after: {} times of applying".format(n))
      winsound.Beep(540, 1000)
    
